@@ -1,1 +1,1 @@
-# dataviz-project
+# Data Analytics Project
