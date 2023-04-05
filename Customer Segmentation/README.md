@@ -32,7 +32,8 @@ Based on the condition above, company will develop a customer segmentation syste
 - How much did a customer buy the products?
 
 ### Goals
-- Filter customers into various groups to help company identifies potential customers to do a more profitable business
+- Filter customers into various groups to help company identifies potential customers to do a more profitable business.
+- Segmenting customers based on their behavior: what they do, how much they spend, how often and what products.
 
 ### Solution statements
 - Combining RFM Analysis with K-Means clustering algorithm. To understand the behavior of the customer, RFM metrics plays a vital role as frequency and monetary value affect a customer's lifetime value and recency affects retention, a measure of engagement. On the other side, K-Means helps to answer vital question like who are the best customers, who contribute to churn rate etc. Thus, we will do an in-depth analysis using those two method.
@@ -65,21 +66,34 @@ This dataset consists of:
 - 8 columns (features/variables)
 - 541.909 rows (records)
 
-[insert image here eda-1]
+<p align="center">
+    <img src="img/eda-1.png" width=500>
+</p>
 
 **Missing Values**
 Only 2 columns have missing values: CustomerID (135.080 or 24.93%) and Description (1.454 or 0.27%). It is interesting to note that ∼ 25% of the entries are not assigned to a particular customer. With the data available, it is impossible to impute values for the user and these entries are thus useless for the current exercise. So, we exclude them from the dataframe.
-[insert image here eda-2]
+
+<p align="center">
+    <img src="img/eda-2.png" width=500>
+</p>
 
 **Duplicate Values**
 There are 5.225 (1%) duplicate rows dan we remove them from the dataframe.
-[insert image here eda-3]
+
+<p align="center">
+    <img src="img/eda-3.png" width=500>
+</p>
 
 **Negative Values**
 Quantity column has 8.872 negative values. Some of these are associated with cancelled orders. Thus, we remove them before further analysis.
-[insert image here eda-4]
+
+<p align="center">
+    <img src="img/eda-4.png" width=500>
+</p>
 
 ## Data Preparation
+
+
 Pada bagian ini Anda menerapkan dan menyebutkan teknik data preparation yang dilakukan. Teknik yang digunakan pada notebook dan laporan harus berurutan.
 
 **Rubrik/Kriteria Tambahan (Opsional)**: 
